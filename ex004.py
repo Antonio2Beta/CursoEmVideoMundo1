@@ -1,0 +1,12 @@
+import time
+algo = input('\033[31mDigite algo: \033[m')
+print('\033[7;35m-------------PROCESSANDO...-------------\033[m')
+time.sleep(3)
+print('O tipo primitivo de \33[4;35m{}\033[m é \033[1;34m{}'.format(algo, type(algo)))
+print('\033[4;35m{}\033[m Só tem espaços? \033[1;34m{}'.format(algo, algo.isspace()))
+print('\033[4;35m{}\033[m É um número? \033[1;34m{}'.format(algo, algo.isnumeric()))
+print('\033[4;35m{}\033[m É alfabético? \033[1;34m{}'.format(algo, algo.isalpha()))
+print('\033[4;35m{}\033[m É alphanumérico? \033[1;34m{}'.format(algo, algo.isalnum()))
+print('\033[4;35m{}\033[m Só possui letras maísculas? \033[1;34m{}'.format(algo, algo.isupper()))
+print('\033[4;35m{}\033[m Só possui letras minúsculas? \033[1;34m{}'.format(algo, algo.islower()))
+print('\033[4;35m{}\033[m Está capitalizado? \033[1;34m{}'.format(algo, algo.istitle()))
